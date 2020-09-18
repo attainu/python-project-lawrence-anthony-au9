@@ -148,7 +148,8 @@ if __name__ == "__main__":
                     x, y = x // 50, y // 50
                     prevsel = sel
                     sel = [x, y]
-                # If move is legal, do the move - update chess variables
+
+                # If move is legal, we will do the move and update chess variables
                 if isValidMove(side_flag, board, flags, prevsel, sel):
                     promote = getPromote(win, side_flag, board, prevsel, sel)
                     side_flag, board, flags = makeMove(

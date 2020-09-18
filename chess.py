@@ -59,10 +59,9 @@ def isEnd(side_flag, board, flags):
 
 
 # This function moves the piece from one coordinate to other while handling the
-# capture of enemy, pawn promotion and en-passent.
-# One thing to note that this function directly modifies global value of the
-# board variable from within the function, so pass a copy of the board
-# variable if you do not want global modification of the variable.
+# capture of enemy, pawn promotion and en-passant.
+# One thing to note is that this function directly modifies global value of the
+# board variable from within the function
 
 def move(side_flag, board, fro, to, promote="p"):
     UP = 8 if side_flag else 1
