@@ -22,8 +22,6 @@ https://realpython.com/installing-python/
 
 https://www.pygame.org/wiki/GettingStarted
 
-
-
-
+![](images/installing_python.jpg)
 
 Author: Lawrence Anthony
