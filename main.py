@@ -65,7 +65,6 @@ class gui_logic:
 
 
 # Main driver Function for chess program
-
 if __name__ == "__main__":
 
     # Initializing regular pygame stuff.
@@ -73,7 +72,7 @@ if __name__ == "__main__":
     clock = pygame.time.Clock()
 
     # Flag to toggle sound, to disable set music_flag to False
-    music_flag = True
+    music_flag = False
     if music_flag:
         m = Sound()
 
