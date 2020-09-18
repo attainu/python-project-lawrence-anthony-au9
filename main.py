@@ -85,7 +85,8 @@ if __name__ == "__main__":
 
     # Initialize chess variables
 
-    # Flag that determines which side's turn it is. If it is 0, it is white's turn and if it is 1, it is black's turn
+    # Flag that determines which side's turn it is. If it is 0, it is white's turn and if it is
+    # 1, it is black's turn
     side_flag = 0
 
     board = (
@@ -99,6 +100,7 @@ if __name__ == "__main__":
             [1, 1, "r"], [2, 1, "n"], [3, 1, "b"], [4, 1, "q"],
             [5, 1, "k"], [6, 1, "b"], [7, 1, "n"], [8, 1, "r"]
         ])
+
     flags = [[True for _ in range(4)], None]
 
     # Lists that store x,y co-ordinate of current and previous mouse selection on pygame window
@@ -130,9 +132,12 @@ if __name__ == "__main__":
             if (side_flag == 0 and to[1] == 1) or (side_flag == 1 and to[1] == 8):
                 return g.getChoice(win, side_flag)
 
+    # Running game loop infinitely until the running flag becomes False
     running = True
     while running:
+
         clock.tick(30)
+
         # Iterating over events
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

@@ -109,7 +109,7 @@ def isValidMove(side_flag, board, flags, fro, to):
 
 
 # This is an important wrapper function. It makes the move, updates the
-# flags and flips the side_flag, returning the updated data.
+# flags and changes the side_flag, returning the updated data.
 
 def makeMove(side_flag, board, fro, to, flags, promote="q"):
     newboard = move(side_flag, copy(board), fro, to, promote)
