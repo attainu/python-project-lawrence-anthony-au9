@@ -1,21 +1,11 @@
 # Chess Game using Python
 
-This repo is for 
+This repo is for Chess game project made using Pygame and it uses OOPs principles as there are classes for GUI and sound.
 
-This is "lite", it does not contain all fancy features of My-PyChess like a GUI with many menus, singleplayer, online, savegame etc etc.
+It is just plain and simple 2 player chess but it supports all chess features like move validation, Check-Checkmate-Stalemate detection, Pawn promotion, Castling and En-passant.
 
-It is just plain and simple chess under 350 lines of code - Although it still supports all chess features like move validation, check-checkmate-stalemate detection, pawn promotion, castling and enpassent.
+Apart from all valid chess logic, I have also added interactive GUI that lets user know which side is to make the move, if a performed move is legal or not, events when check/checkmate/pawn promotion and stalemate occurs.
 
-It is perfect for programmers who want to look at the basics of a chess app.
+Currently only background music is added which can be toggled on or off. I plan to add more sound effects in the future 
 
-## Resource Credits
-I have used "piecesprite.png" in this program, which is not created by me. All other resources in this program are created by me.
-
-Piecesprites: Image from Wikipedia.com
-
-This file is licensed under the:
-    Creative Commons Attribution-Share Alike 3.0 Unported license.
-    
-Source: http://commons.wikimedia.org/wiki/Template:SVG_chess_pieces
-
-Author: jurgenwesterhof (adapted from work of Cburnett)
+Author: Lawrence Anthony
