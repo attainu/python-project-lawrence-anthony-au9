@@ -31,4 +31,11 @@ Windows users can follow these simple steps:
 2) For pygame, run pip install pygame. If it is already installed, we will get output as below. If it is not installed, Windows will automatically begin its installation
 <img src="./images/installing_pygame.JPG">
 
+3) Navigate to the folder where the main.py file is located and run python3 main.py in terminal
+<img src="./images/running_game.JPG">
+
+You can also check below video where I give a tour of the chess game using Visual Studio code:
+
+
+
 Author: Lawrence Anthony
