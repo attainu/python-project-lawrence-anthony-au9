@@ -34,6 +34,8 @@ Windows users can follow these simple steps:
 3) Navigate to the folder where the main.py file is located and run python3 main.py in terminal
 <img src="./images/running_game.JPG">
 
+To disable background music, please set music_flag to False. You can find this variable in main.py
+
 You can also check below video where I give a tour of the chess game using Visual Studio code:
 
 https://drive.google.com/file/d/1V5iJF7_kWJVxpjV8wQUy-9THP9AP2AEh/view?usp=sharing

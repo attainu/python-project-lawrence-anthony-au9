@@ -71,8 +71,8 @@ if __name__ == "__main__":
     pygame.init()
     clock = pygame.time.Clock()
 
-    # Flag to toggle sound, to disable set music_flag to False
-    music_flag = False
+    # Flag to toggle sound, to disable set music_flag to False, to enable set it to True
+    music_flag = True
     if music_flag:
         m = Sound()
 
