@@ -1,6 +1,8 @@
-# File to store functions dealing with chess logic aspects of chess program
+# File to store functions dealing with chess logic aspect of chess program
+
 
 # Function to make a copy of the board
+
 def copy(board):
     return [[list(j) for j in board[i]] for i in range(2)]
 
@@ -15,12 +17,11 @@ def getType(side_flag, board, pos):
 
 # Function to determine whether the position given is occupied by a piece of the given side.
 
-
 def isOccupied(side_flag, board, pos):
     return getType(side_flag, board, pos) is not None
 
-# Determine wether the position(s) given is(are) empty or not
 
+# Determine wether the position(s) given is(are) empty or not
 
 def isEmpty(board, *poslist):
     for pos in poslist:
@@ -56,12 +57,12 @@ def isEnd(side_flag, board, flags):
         return False
     return True
 
+
 # This function moves the piece from one coordinate to other while handling the
 # capture of enemy, pawn promotion and en-passent.
 # One thing to note that this function directly modifies global value of the
 # board variable from within the function, so pass a copy of the board
 # variable if you do not want global modification of the variable.
-
 
 def move(side_flag, board, fro, to, promote="p"):
     UP = 8 if side_flag else 1
@@ -91,14 +92,14 @@ def move(side_flag, board, fro, to, promote="p"):
             break
     return board
 
-# This function returns wether a move puts ones own king at check
 
+# This function returns whether a move puts ones own king at check
 
 def moveTest(side_flag, board, fro, to):
     return not isChecked(side_flag, move(side_flag, copy(board), fro, to))
 
-# This function returns wether a move is valid or not
 
+# This function returns wether a move is valid or not
 
 def isValidMove(side_flag, board, flags, fro, to):
     if 0 < to[0] < 9 and 0 < to[1] < 9 and not isOccupied(side_flag, board, to):
@@ -106,18 +107,18 @@ def isValidMove(side_flag, board, flags, fro, to):
         if to in rawMoves(side_flag, board, piece, flags):
             return moveTest(side_flag, board, fro, to)
 
+
 # This is an important wrapper function. It makes the move, updates the
 # flags and flips the side_flag, returning the updated data.
-
 
 def makeMove(side_flag, board, fro, to, flags, promote="q"):
     newboard = move(side_flag, copy(board), fro, to, promote)
     newflags = updateFlags(side_flag, newboard, fro, to, flags)
     return not side_flag, newboard, newflags
 
+
 # Does a routine check to update all the flags required for castling and
 # enpassent. This function needs to be called AFTER every move played.
-
 
 def updateFlags(side_flag, board, fro, to, flags):
     castle = list(flags[0])
@@ -139,7 +140,7 @@ def updateFlags(side_flag, board, fro, to, flags):
 
     return castle, enP
 
-# Given a side_flag, board and piece, it yields all possible legal moves
+# Given a side, board and piece, it yields all possible legal moves
 # of that piece. This function is an extension/wrapper on rawMoves()
 
 
@@ -149,7 +150,7 @@ def availableMoves(side_flag, board, piece, flags):
             if moveTest(side_flag, board, piece[:2], i):
                 yield i
 
-# Given a side_flag, board and piece, it yields all possible moves by the piece.
+# Given a side, board and piece, it yields all possible moves by the piece.
 # If flags are given, it can also yeild the special moves of chess.
 # It also returns moves that are illegal, therefore the function is for
 # internal use only
