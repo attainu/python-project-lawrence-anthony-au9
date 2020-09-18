@@ -36,6 +36,6 @@ Windows users can follow these simple steps:
 
 You can also check below video where I give a tour of the chess game using Visual Studio code:
 
-
+https://drive.google.com/file/d/1V5iJF7_kWJVxpjV8wQUy-9THP9AP2AEh/view?usp=sharing
 
 Author: Lawrence Anthony
