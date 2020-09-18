@@ -22,6 +22,13 @@ https://realpython.com/installing-python/
 
 https://www.pygame.org/wiki/GettingStarted
 
-![](images/installing_python.jpg)
+
+Windows users can follow these simple steps:
+
+1) Run python3 command, if it is already installed, we will get output as below. If it is not installed, Windows will automatically begin its installation
+<img src="./images/installing_python.JPG">
+
+2) For pygame, run pip install pygame. If it is already installed, we will get output as below. If it is not installed, Windows will automatically begin its installation
+<img src="./images/installing_pygame.JPG">
 
 Author: Lawrence Anthony
